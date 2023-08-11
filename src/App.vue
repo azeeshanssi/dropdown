@@ -30,7 +30,4 @@ const id = ref(null)
 const onSelection = (iid) => {
   id.value = iid
 }
-
 </script>
-
-
