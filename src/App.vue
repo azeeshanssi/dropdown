@@ -9,7 +9,7 @@
       </div>
       <div class="flex-1 h-full flex flex-col items-center justify-center bg-green-200">
         <h1 class="text-3xl text-gray-800 font-medium mb-2">Your Chosen Value is:</h1>
-        <div id="selected">{{ id }}</div>
+        <div v-if="id!=null" id="selected">{{ options[id-1].title }}</div>
       </div>
     </div>
   </div>
