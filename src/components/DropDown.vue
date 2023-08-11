@@ -1,10 +1,10 @@
 <template>
   <div id="dropdown" class="relative">
-    <button
+    <div
       @click="isOpen = !isOpen"
       class="cursor-pointer border rounded-lg bg-white p-3 h-10 hover:bg-gray-400 flex items-center justify-between"
     >
-      <span class="mr-2">Select Your Tech</span>
+      <div class="mr-2">Select Your Tech</div>
       <svg
         :class="{'transform rotate-180': isOpen}"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
           d="M19 9l-7 7-7-7"
         />
       </svg>
-    </button>
+    </div>
     <div v-if="isOpen" class="absolute mt-2 w-full border bg-white shadow-md rounded-md">
       <span
         v-for="option in options"
